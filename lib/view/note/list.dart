@@ -14,8 +14,6 @@ class ListNotes extends StatefulWidget {
 
 var list=[];
 
-
-
 class _ListNotesState extends State<ListNotes> {
 
   data() async {
@@ -28,9 +26,7 @@ class _ListNotesState extends State<ListNotes> {
   @override
   void initState() {
     // TODO: implement initState
-
     data();
-
     super.initState();
   }
 
@@ -41,7 +37,6 @@ class _ListNotesState extends State<ListNotes> {
         bar(),
         nav(context),
         body(context, scroll(cards(context,list))),
-        //Container(width: double.infinity,height:40,color: Colors.black12),
       ],), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

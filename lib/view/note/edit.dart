@@ -72,15 +72,12 @@ class _EditNoteState extends State<EditNote> {
                         controller_description.text
                       ],edit_id);
                     }
-
-
                     navigate(context,'list_notes');
                   },
                   child: button(edit_id>0?'Atualizar':'Cadastrar',Colors.black87))),
             ]),
           ],),
         ))),
-        //Container(width: double.infinity,height:40,color: Colors.black12),
       ],), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

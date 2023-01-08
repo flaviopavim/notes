@@ -28,7 +28,6 @@ linkMenu(t,i) {
           color: Colors.black12,
           child: Center(child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Icon(i,size:16),
               Container(width:5),
@@ -39,18 +38,4 @@ linkMenu(t,i) {
       Container(height:1),
     ],
   );
-}
-
-img(url) {
-  return Container();
-}
-
-
-slide() {
-  return Container();
-}
-
-
-carousel() {
-  return Container();
 }

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'layout.dart';
 
 formGroup(t,controller) {
   return Column(
-    //mainAxisAlignment: MainAxisAlignment.start,
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(t),
@@ -13,10 +11,8 @@ formGroup(t,controller) {
         width: double.infinity,
         height: 55,
         color: Colors.black12,
-        //child: Text(t)
         child: TextField(
           controller: controller,
-          //obscureText: true,
           decoration: InputDecoration(
             border: OutlineInputBorder(),
             //labelText: 'Password',
@@ -38,7 +34,6 @@ pass(t,controller) {
 
 textarea(t,controller) {
   return Column(
-    //mainAxisAlignment: MainAxisAlignment.start,
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(t),
@@ -47,7 +42,6 @@ textarea(t,controller) {
         width: double.infinity,
         height: 120,
         color: Colors.black12,
-        //child: Text(t)
         child: TextField(
           controller: controller,
           //obscureText: true,
@@ -62,12 +56,9 @@ textarea(t,controller) {
   );
 }
 
-
 select(t,controller) {
   return formGroup(t,controller);
 }
-
-
 
 boolSwitch(t,controller) {
   //aquele botão de liga e desliga

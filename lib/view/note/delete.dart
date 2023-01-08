@@ -28,32 +28,20 @@ class _DeleteNoteState extends State<DeleteNote> {
             child: Column(children: [
               Text('Delete note?'),
               br(30.0),
-
               Row(children: [
-                //Expanded(flex:40,child: GestureDetector(onTap:(){
-                //  navigate(context,'list_notes');
-                //},child:button('Cancelar',Colors.grey))),
-                //Expanded(flex:1,child:Container()),
                 Expanded(flex:40,child: GestureDetector(onTap:(){
                   navigate(context,'list_notes');
                 },child:button('Voltar',Colors.black87))),
                 Expanded(flex:1,child:Container()),
                 Expanded(flex:40,child: GestureDetector(onTap:() async {
-
-
                   Database database=await connection();
                   await database.rawDelete('DELETE FROM note WHERE id = $edit_id');
                   await database.close();
-
                   edit_id=0;
-
                   navigate(context,'list_notes');
                 },child:button('Excluir',Colors.red))),
-
-              ],)
-
-
-            ],),
+              ])
+            ])
           ),
         ))),
         //Container(width: double.infinity,height:40,color: Colors.black12),

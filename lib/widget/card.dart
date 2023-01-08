@@ -8,7 +8,6 @@ card(context,arr) {
   return Column(children: [
     Container(
       width: double.infinity,
-      //height: 200,
       color: Colors.white,
       child: Padding(
         padding: const EdgeInsets.all(0),
@@ -37,10 +36,6 @@ card(context,arr) {
                 child: Padding(
                   padding: const EdgeInsets.all(2.0),
                   child: Row(children: [
-                    //Expanded(flex:40,child: GestureDetector(onTap:(){
-                    //  navigate(context,'list_notes');
-                    //},child:button('Cancelar',Colors.grey))),
-                    //Expanded(flex:1,child:Container()),
                     Expanded(flex:40,child: GestureDetector(onTap:(){
                       edit_id=arr['id'];
                       navigate(context,'edit_note');
@@ -50,7 +45,6 @@ card(context,arr) {
                       edit_id=arr['id'];
                       navigate(context,'delete_note');
                     },child:button('Excluir',Colors.red))),
-
                   ],),
                 ))
           ],
@@ -59,8 +53,7 @@ card(context,arr) {
     ),
     Container(
       width: double.infinity,
-      height: 5,
-      //color: Colors.black
+      height: 5
     )
   ],);
 }

@@ -9,7 +9,6 @@ class ViewNote extends StatefulWidget {
   State<ViewNote> createState() => _ViewNoteState();
 }
 
-
 class _ViewNoteState extends State<ViewNote> {
   @override
   Widget build(BuildContext context) {
@@ -23,10 +22,9 @@ class _ViewNoteState extends State<ViewNote> {
           child: Center(
             child: Column(children: [
               Text('View note')
-            ],),
+            ]),
           ),
         ))),
-        //Container(width: double.infinity,height:40,color: Colors.black12),
       ],), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

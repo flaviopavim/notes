@@ -14,17 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //title: 'Anotações',
       debugShowCheckedModeBanner: false,
       initialRoute: '/menu',
       routes: {
-        //'/': (context) => const Main(),
         '/menu': (context) => const Menu(),
-        //'/login': (context) => const Login(),
-        //'/signup': (context) => const Signup(),
-        //'/recovery': (context) => const Recovery(),
-        //'/pass': (context) => const Pass(),
-        //'/profile': (context) => const Profile(),
         '/edit_note': (context) => const EditNote(),
         '/list_notes': (context) => const ListNotes(),
         '/view_note': (context) => const ViewNote(),
