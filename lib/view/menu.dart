@@ -21,11 +21,11 @@ class _MenuState extends State<Menu> {
         body(context,scroll(Column(children: [
           GestureDetector(onTap:(){
             navigate(context,'list_notes');
-          },child:linkMenu('Notes',Icons.edit)),
+          },child:linkMenu('Anotações',Icons.edit)),
           GestureDetector(onTap:(){
             edit_id=0;
             navigate(context,'edit_note');
-          },child:linkMenu('New note',Icons.add_circle)),
+          },child:linkMenu('Nova anotação',Icons.add_circle)),
         ],))),
         //Container(width: double.infinity,height:40,color: Colors.black12),
       ],),// This trailing comma makes auto-formatting nicer for build methods.
