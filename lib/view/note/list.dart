@@ -20,6 +20,7 @@ class _ListNotesState extends State<ListNotes> {
     Database database=await connection();
     list = await database.rawQuery('SELECT * FROM note ORDER BY id DESC');
     await database.close();
+
     setState((){});
   }
 
