@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes/fn/database.dart';
+import '../../fn/database.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../../inc/nav.dart';

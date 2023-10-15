@@ -16,8 +16,8 @@ class _ViewNoteState extends State<ViewNote> {
       body: Column(children: [
         bar(),
         nav(context),
-        body(context, scroll(Padding(
-          padding: const EdgeInsets.only(
+        body(context, scroll(const Padding(
+          padding: EdgeInsets.only(
               top: 80.0, bottom: 80.0, left: 30.0, right: 30.0),
           child: Center(
             child: Column(children: [

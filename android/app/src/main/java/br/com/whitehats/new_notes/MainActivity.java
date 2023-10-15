@@ -1,4 +1,4 @@
-package br.com.whitehats.notes.notes;
+package br.com.whitehats.new_notes;
 
 import io.flutter.embedding.android.FlutterActivity;
 

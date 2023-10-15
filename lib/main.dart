@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:notes/view/menu.dart';
-import 'package:notes/view/note/edit.dart';
-import 'package:notes/view/note/list.dart';
-import 'package:notes/view/note/view.dart';
-import 'package:notes/view/note/delete.dart';
+import '../view/menu.dart';
+import '../view/note/edit.dart';
+import '../view/note/list.dart';
+import '../view/note/view.dart';
+import '../view/note/delete.dart';
 
 void main() {
   runApp(const MyApp());

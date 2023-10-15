@@ -16,7 +16,7 @@ card(context,arr) {
             Container(
                 width:double.infinity,
                 height: 40,
-                color: Colors.black12,
+                color: const Color(0xFFCCCCCC),
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: Text(arr['title']),
